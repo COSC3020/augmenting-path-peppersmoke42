@@ -25,7 +25,7 @@ function augmentingPath(graph, start, end) {
         for (const neighbor of Object.keys(graph[node]))
             if (!visited.has(neighbor) && graph[node][neighbor] > 0)
                 if(dfs(neighbor))
-                    return ture;
+                    return true;
     
         path.pop();
         return false;
